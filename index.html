@@ -2,33 +2,36 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Our arbitrary image gallery</title>
 
     <!--connecting html to css:-->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
 
-    <div class="bigImage" id="imgcontainer">
-        <img src="Gallery/1.jpg" alt="" id="mainImg">
-        <span>X</span>
-    </div>
-    <!--adding images:-->
-    <div class="Galley">
-        <img src="Gallery/alex-knight-2EJCSULRwC8-unsplash.jpg" />
-        <img src="Gallery/javier-miranda-hrmKDnm-kA4-unsplash.jpg" />
-        <img src="Gallery/jj-ying-8bghKxNU1j0-unsplash.jpg" />
-        <img src="Gallery/joshua-sortino-LqKhnDzSF-8-unsplash.jpg" />
+<div class="bigImage" id="imgcontainer">
+    <img src="Gallery/2.jpg" alt="" id="mainImg">
+    <span onclick="closeImg()">X</span>
+</div>
+<!--adding images:-->
+<div class="Galley">
+    <img src="Gallery/alex-knight-2EJCSULRwC8-unsplash.jpg" onclick="openImg(this.src)"/>
+    <img src="Gallery/javier-miranda-hrmKDnm-kA4-unsplash.jpg" onclick="openImg(this.src)"/>
+    <img src="Gallery/jj-ying-8bghKxNU1j0-unsplash.jpg" onclick="openImg(this.src)"/>
+    <img src="Gallery/joshua-sortino-LqKhnDzSF-8-unsplash.jpg" onclick="openImg(this.src)" " />
 
-        <img src="Gallery/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg" />
-        <img src="Gallery/marvin-meyer-SYTO3xs06fU-unsplash.jpg" />
-        <img src="Gallery/ramon-salinero-vEE00Hx5d0Q-unsplash.jpg" />
-        <img src="Gallery/siednji-leon-XuwE8fbyArs-unsplash.jpg" />
-        <img src="Gallery/1.jpg" alt="" />
-        <img src="Gallery/2.jpg" alt="" />
-    </div>
+    <img src="Gallery/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg " onclick="openImg(this.src) "/>
+    <img src="Gallery/marvin-meyer-SYTO3xs06fU-unsplash.jpg " onclick="openImg(this.src) "/>
+    <img src="Gallery/ramon-salinero-vEE00Hx5d0Q-unsplash.jpg " onclick="openImg(this.src) "/>
+    <img src="Gallery/siednji-leon-XuwE8fbyArs-unsplash.jpg " onclick="openImg(this.src) "/>
+    <img src="Gallery/1.jpg " alt=" " onclick="openImg(this.src) "/>
+    <img src="Gallery/2.jpg " alt=" " onclick="openImg(this.src) "/>
+</div>
 </body>
+<script src="main.js">
+
+</script>
 
 </html>
